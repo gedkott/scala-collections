@@ -24,6 +24,7 @@ object NaiveBST {
   // users should not be able to construct a BST themselves using a invalid root node for root of BST
   private case class BSTImpl[V](root: Node[V])(implicit o: V => Ordered[V]) extends BST[V] {
 
+    // influenced by: http://erichgess.github.io/blog/2016/03/21/purely-functional-data-structures-chapter-2-binary-search-trees/
     def insert(v: V): BST[V] = {
       def insert(root: Node[V], v: V): Node[V] = {
         root match {
