@@ -1,0 +1,1 @@
+code coverage through https://github.com/scoverage/sbt-scoverage - read docs there for details on how to run tests with coverage and generate reports
